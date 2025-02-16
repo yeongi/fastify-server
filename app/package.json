@@ -3,12 +3,20 @@
   "type": "module",
   "packageManager": "yarn@4.6.0",
   "scripts": {
-    "start": "node ./dist/index.js",
-    "build": "node --loader=extensionless && node ./esbuild.config/js"
+    "start": "node --loader=extensionless ./dist/index.js",
+    "build": "node ./esbuild.config.js",
+    "dev": "nodemon"
+  },
+  "nodemonConfig": {
+    "watch": "src",
+    "ignore": ["dist/**", "node_modules/**"],
+    "ext": "ts",
+    "exec": "rm -rf ./dist && yarn node ./esbuild.config.js && node --loader=extensionless ./dist/index.js"
   },
   "devDependencies": {
     "@yarnpkg/esbuild-plugin-pnp": "^3.0.0-rc.15",
     "esbuild": "^0.25.0",
+    "nodemon": "^3.1.9",
     "typescript": "^5.7.3"
   },
   "dependencies": {
