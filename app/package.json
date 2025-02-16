@@ -1,4 +1,17 @@
 {
   "name": "fastify-demo",
-  "packageManager": "yarn@4.6.0" 
+  "type": "module",
+  "packageManager": "yarn@4.6.0",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "build": "node --loader=extensionless && node ./esbuild.config/js"
+  },
+  "devDependencies": {
+    "@yarnpkg/esbuild-plugin-pnp": "^3.0.0-rc.15",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "extensionless": "^1.9.9"
+  }
 }

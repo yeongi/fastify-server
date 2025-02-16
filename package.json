@@ -1,7 +1,9 @@
 {
   "name": "fastify-server",
   "packageManager": "yarn@4.6.0",
-  "workspaces": ["app"],
+  "workspaces": [
+    "app"
+  ],
   "devDependencies": {
     "@biomejs/biome": "^1.9.4"
   }
