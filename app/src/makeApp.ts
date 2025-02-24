@@ -11,7 +11,7 @@ export function makeApp() {
 
   app.get("/healthz", async () => {
     return {
-      data: "ok",
+      ok: true,
     };
   });
 
