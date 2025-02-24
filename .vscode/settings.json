@@ -6,14 +6,14 @@
     "source.fixAll": "always",
     "source.organizeImports": "explicit"
   },
-
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true
   },
-
   // typescript
   "typescript.tsdk": ".yarn/sdks/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "cSpell.words": ["extensionless"]
+  "cSpell.words": [
+    "extensionless"
+  ]
 }

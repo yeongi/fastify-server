@@ -14,12 +14,12 @@
     "exec": "rm -rf ./dist && yarn node ./esbuild.config.js && node --loader=extensionless ./dist/index.js"
   },
   "devDependencies": {
-    "@yarnpkg/esbuild-plugin-pnp": "^3.0.0-rc.15",
     "esbuild": "^0.25.0",
     "nodemon": "^3.1.9",
     "typescript": "^5.7.3"
   },
   "dependencies": {
-    "extensionless": "^1.9.9"
+    "extensionless": "^1.9.9",
+    "fastify": "^5.2.1"
   }
 }
