@@ -1,4 +1,5 @@
 import fastify from "fastify";
+import "dotenv-safe/config.js";
 
 export function makeApp() {
   const app = fastify();

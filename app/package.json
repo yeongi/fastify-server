@@ -9,7 +9,10 @@
   },
   "nodemonConfig": {
     "watch": "src",
-    "ignore": ["dist/**", "node_modules/**"],
+    "ignore": [
+      "dist/**",
+      "node_modules/**"
+    ],
     "ext": "ts",
     "exec": "rm -rf ./dist && yarn node ./esbuild.config.js && node --loader=extensionless ./dist/index.js"
   },
@@ -19,6 +22,8 @@
     "typescript": "^5.7.3"
   },
   "dependencies": {
+    "dotenv": "^16.4.7",
+    "dotenv-safe": "^9.1.0",
     "extensionless": "^1.9.9",
     "fastify": "^5.2.1"
   }

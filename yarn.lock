@@ -628,6 +628,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dotenv-safe@npm:^9.1.0":
+  version: 9.1.0
+  resolution: "dotenv-safe@npm:9.1.0"
+  peerDependencies:
+    dotenv: ">= 8.2.0"
+  checksum: 10c0/0e1cb4fbd65fea8c0e3dfc98a793d5a783ea1e361ecc250e6f5e28b9385fff9388ad85d7da7eb6402ed8f9591f91bf3b4a1ad9911cb746dd16acdd341d1d36e1
+  languageName: node
+  linkType: hard
+
+"dotenv@npm:^16.4.7":
+  version: 16.4.7
+  resolution: "dotenv@npm:16.4.7"
+  checksum: 10c0/be9f597e36a8daf834452daa1f4cc30e5375a5968f98f46d89b16b983c567398a330580c88395069a77473943c06b877d1ca25b4afafcdd6d4adb549e8293462
+  languageName: node
+  linkType: hard
+
 "eastasianwidth@npm:^0.2.0":
   version: 0.2.0
   resolution: "eastasianwidth@npm:0.2.0"
@@ -827,6 +843,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "fastify-demo@workspace:app"
   dependencies:
+    dotenv: "npm:^16.4.7"
+    dotenv-safe: "npm:^9.1.0"
     esbuild: "npm:^0.25.0"
     extensionless: "npm:^1.9.9"
     fastify: "npm:^5.2.1"
