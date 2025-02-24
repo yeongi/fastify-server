@@ -1,14 +1,10 @@
+import fastifyAutoload from "@fastify/autoload";
 import fastify from "fastify";
-import "dotenv-safe/config.js";
 
 export function makeApp() {
   const app = fastify();
 
-  app.get("/", async () => {
-    return {
-      data: "ok",
-    };
-  });
+  app.register(fastifyAutoload, {});
 
   app.get("/healthz", async () => {
     return {

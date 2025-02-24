@@ -11,9 +11,6 @@
     "**/.pnp.*": true
   },
   // typescript
-  "typescript.tsdk": ".yarn/sdks/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true,
-  "cSpell.words": [
-    "extensionless"
-  ]
+  "typescript.tsdk": "../.yarn/sdks/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }
