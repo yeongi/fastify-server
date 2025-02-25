@@ -6,7 +6,7 @@ COPY .yarn/releases/ /usr/src/app/.yarn/releases/
 COPY package.json yarn.lock .yarnrc.yml tsconfig.json /usr/src/app/
 COPY app/package.json /usr/src/app/app/package.json
 
-RUN yarn install --immutable --immutable-cache
+RUN yarn install --immutable
 
 # 소스코드 복사 및 빌드
 COPY app/ /usr/src/app/app/
