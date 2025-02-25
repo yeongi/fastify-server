@@ -9,4 +9,5 @@ build({
   minify: false,
   sourcemap: false,
   format: "esm",
+  plugins: [],
 });

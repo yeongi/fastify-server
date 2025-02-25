@@ -1,10 +1,21 @@
 import fastifyAutoload from "@fastify/autoload";
 import fastify from "fastify";
+import path from "node:path";
 
 export function makeApp() {
-  const app = fastify();
+  const app = fastify({
+    logger: true,
+  });
 
-  app.register(fastifyAutoload, {});
+  app.register(fastifyAutoload, {
+    dir: path.resolve("./dist/plugins"),
+  });
+
+  app.get("/", async () => {
+    return {
+      data: "Hello World",
+    };
+  });
 
   app.get("/healthz", async () => {
     return {
@@ -14,3 +25,5 @@ export function makeApp() {
 
   return app;
 }
+
+console.log("makeApp.ts is loaded");
