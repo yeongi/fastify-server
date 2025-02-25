@@ -1,5 +1,5 @@
 {
-  "name": "fastify-demo",
+  "name": "@fastify-server/app",
   "type": "module",
   "packageManager": "yarn@4.6.0",
   "scripts": {
