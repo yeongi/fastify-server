@@ -3,7 +3,7 @@ FROM node:20-alpine
 WORKDIR /usr/src/app
 
 COPY .yarn/releases/ /usr/src/app/.yarn/releases/
-COPY pakage.json yarn.lock .yarnrc.yml tsconfig.json /usr/src/app/
+COPY package.json yarn.lock .yarnrc.yml tsconfig.json /usr/src/app/
 COPY app/package.json /usr/src/app/app/package.json
 
 RUN yarn install --immutable
