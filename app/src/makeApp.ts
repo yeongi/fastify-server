@@ -11,12 +11,6 @@ export function makeApp() {
     dir: path.resolve("./dist/plugins"),
   });
 
-  app.get("/", async () => {
-    return {
-      data: "Hello World",
-    };
-  });
-
   app.get("/healthz", async () => {
     return {
       ok: true,

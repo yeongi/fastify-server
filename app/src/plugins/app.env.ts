@@ -17,8 +17,8 @@ declare module "fastify" {
 export default fp(
   async (app) => {
     await app.register(fastifyEnv, {
-      confkey: "env",
       schema,
+      confKey: "env",
     });
   },
   {

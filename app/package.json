@@ -4,7 +4,7 @@
   "packageManager": "yarn@4.6.0",
   "scripts": {
     "start": "node --loader=extensionless ./dist/index.js",
-    "build": "node ./esbuild.config.js",
+    "build": "node ./esbuild.config.js && react-router build",
     "dev": "nodemon"
   },
   "nodemonConfig": {
@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "@fastify/autoload": "^6.1.0",
+    "@mcansh/remix-fastify": "^4.0.7",
     "@react-router/node": "^7.2.0",
     "@sinclair/typebox": "^0.34.28",
     "dotenv": "^16.4.7",
